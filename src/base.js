@@ -485,6 +485,10 @@ var expect = function(actual) {
   return jasmine.getEnv().currentSpec.expect(actual);
 };
 
+var flunk = function(message) {
+  return jasmine.getEnv().currentSpec.flunk(message);
+};
+
 /**
  * Defines part of a jasmine spec.  Used in cominbination with waits or waitsFor in asynchrnous specs.
  *

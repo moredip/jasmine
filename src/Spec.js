@@ -73,6 +73,10 @@ jasmine.Spec.prototype.expect = function(actual) {
   return positive;
 };
 
+jasmine.Spec.prototype.flunk = function(message) {
+  this.fail(message);
+}
+
 /**
  * Waits a fixed time period before moving to the next block.
  *
